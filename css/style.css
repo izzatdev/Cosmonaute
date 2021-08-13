@@ -40,7 +40,7 @@ button{
 }
 body{
     color: #FFFFFF;
-    font-family: SF Pro Display;
+    font-family: 'sf-pro-display';
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
@@ -52,6 +52,20 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 
+}
+.title{
+    font-family: 'spaceagecyrillic';
+    padding: 100px 0;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+}
+.button{
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 20px 45px;
 }
 .header{
     background-image: url("../images/header-bg.jpg");
@@ -115,7 +129,7 @@ margin-right: 200px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .header_btn{
     font-size: 24px;
@@ -125,7 +139,7 @@ margin-right: 200px;
     width: 100%;
     border: 1px solid #FFFFFF;
     padding: 15px 10px 16px;
-    font-family: 'SF Pro Display';
+    font-family: 'sf-pro-display';
 }
 .header_description{
     display: flex;
@@ -140,4 +154,83 @@ margin-right: 200px;
 }
 .header_description-text + .header_description-text{
     margin-left: 52px;
+}
+.about{
+    background-image: url("../images/about-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.about_item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+.about_item:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.about_img{
+    max-width: 100%;
+}
+.about_content{
+    width: 600px;
+}
+.about_content-title{
+    font-family: 'sf-pro-display';
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.about_content-subtitle{
+    font-family: 'sf-pro-display';
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #036CCA;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.about_content-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.about_content-text p{
+    width: 165px;
+}
+.about_table{
+  margin-bottom: 50px;
+}
+.about_table-tr{
+    border: 1px solid #FFFFFF;
+    border-left: none;
+    border-right: none;
+}
+.about_table-tr+ .about_table-tr{
+    font-size: 36px;
+    line-height: 43px;
+    font-weight:bold;
+    text-align: center;
+}
+.about_table-td{
+    padding: 10px 25px 10px 0;
+}
+.about_table-td span{
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+}
+.about_table-caption{
+    caption-side: bottom;
+    text-align: left;
+    margin-top: 20px;
+}
+.how-to{
+    background-image: url("../images/howto-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center;
+    padding-bottom: 100px;
 }
