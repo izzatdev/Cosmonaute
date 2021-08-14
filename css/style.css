@@ -45,6 +45,28 @@ body{
     line-height: 19px;
     font-weight: 400;
 }
+.header{
+    background-image:  linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 100%) , url("../images/header-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+
+}
+.about{
+    background-image:linear-gradient(180deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%), url("../images/about-bg.svg");
+    background-position: top center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.how-to{
+    background-image:linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 100%), url("../images/howto-bg.svg");
+    background-position: bottom center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
 .container{
     max-width: 1220px;
     margin-right: auto;
@@ -55,7 +77,7 @@ body{
 }
 .title{
     font-family: 'spaceagecyrillic';
-    padding: 100px 0;
+    padding-bottom: 100px;
     font-size: 48px;
     line-height: 48px;
     font-weight: 400;
@@ -66,13 +88,6 @@ body{
     font-size: 18px;
     line-height: 21px;
     padding: 20px 45px;
-}
-.header{
-    background-image: url("../images/header-bg.jpg");
-    min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .header_inner{
     display: flex;
@@ -155,12 +170,6 @@ margin-right: 200px;
 .header_description-text + .header_description-text{
     margin-left: 52px;
 }
-.about{
-    background-image: url("../images/about-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
-}
 .about_item{
     display: flex;
     justify-content: space-between;
@@ -227,10 +236,31 @@ margin-right: 200px;
     text-align: left;
     margin-top: 20px;
 }
-.how-to{
-    background-image: url("../images/howto-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:  center;
-    padding-bottom: 100px;
+.how-to_box{
+    text-align: center;
+}
+.how-to_box circle,
+.how-to_box text,
+.how-to_box foreignObject p{
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+.how-to_box  g:hover circle{
+    r: 20px;
+    fill: #036CCA;
+}
+.how-to_box g:hover text{
+    fill: #036CCA;
+    font-size: 30px;
+}
+.how-to_box g:hover foreignObject>p {
+    color:  #036CCA;
+    font-size: 22px;
+}
+foreignObject{
+    text-align: left;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
 }
