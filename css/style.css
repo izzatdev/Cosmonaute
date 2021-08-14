@@ -55,17 +55,31 @@ body{
 }
 .about{
     background-image:linear-gradient(180deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%), url("../images/about-bg.svg");
-    background-position: top center ;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .how-to{
     background-image:linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 100%), url("../images/howto-bg.svg");
-    background-position: bottom center ;
+    background-position:  center ;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 100px;
     padding-top: 100px;
+}
+.to-book{
+    background-image: url("../images/to-book-bg.svg");
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+    padding: 100px 10px 641px 10px;
+}
+.info{
+    background-image:linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 84.9%), url("../images/info-bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
 }
 .container{
     max-width: 1220px;
@@ -263,4 +277,44 @@ foreignObject{
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
+}
+.to-book_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.to-book_text{
+    width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: auto;
+    margin-right: 53px;
+}
+.to-book_text+ .to-book_text{
+    margin: 0;
+}
+.special-offer_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.special-offer_item{
+    width: 500px;
+   }
+.special-offer_item-box{
+    border: 1px solid #FFFFFF;
+    padding: 40px 75px;
+    margin-bottom: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+}
+.special-offer_item-text {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    width: 236px;
+}
+.special-offer_item-text span{
+    color: #CB0E0E;
 }
