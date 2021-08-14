@@ -311,10 +311,89 @@ foreignObject{
 }
 .special-offer_item-text {
     font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    width: 236px;
+    line-height: 27px;
+    width: 240px;
+    margin: 0 auto;
 }
 .special-offer_item-text span{
     color: #CB0E0E;
+}
+.special-offer_item-oldPrice{
+    text-align: right;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 16px;
+    position: relative;
+}
+.special-offer_item-oldPrice::before{
+    content: '';
+    width: 70px;
+    height: 1px;
+    background-color: #CB0E0E;
+    position: absolute;
+    top: 8px;
+    left: 278px;
+    transform: rotate(15deg);
+}
+.special-offer_item-newPrice{
+    font-size: 48px;
+    line-height: 57px;
+}
+.special-offer_btn{
+    width: 100%;
+    margin-bottom: 142px;
+}
+.services{
+    padding-bottom: 200px;
+}
+.services_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.services_box-list{
+    width: 620px;
+    margin-right: 80px;
+    font-size: 24px;
+    line-height: 29px;
+}
+.services_list-title{
+    padding-bottom: 25px;
+}
+.services_list{
+    list-style: none;
+}
+.services_list-item{
+    padding-left: 30px;
+    position: relative;
+}
+.services_list-item:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    top: 5px;
+    left: 0;
+}
+.services_description{
+    padding-top:25px ;
+    font-size: 12px;
+    line-height: 21px;
+}
+.services_buttons{
+    width: 500px;
+}
+.services_btn{
+    width: 100%;
+}
+.services_btn:first-child{
+    margin-bottom: 49px;
+    position: relative;
+}
+.services_btn:first-child:after{
+    content: url("../images/photograph.svg");
+    position: absolute;
+    bottom: 36px;
+    right: 0;
 }
